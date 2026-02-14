@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>For Maria 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="card">
+    <h1>Maria 💘</h1>
+    <p class="sub">This little page is made only for you.</p>
+
+    <!-- Slideshow (2 photos) -->
+    <div class="slideshow">
+      <img id="slideImg" src="maria1.jpg" alt="Maria photo" />
+      <div class="slideBar">
+        <button id="prevBtn" class="miniBtn">⟵</button>
+        <div id="dots" class="dots"></div>
+        <button id="nextBtn" class="miniBtn">⟶</button>
+      </div>
+    </div>
+
+    <!-- Music + Letter buttons -->
+    <div class="btnRow">
+      <button id="playBtn" class="btn primary">▶ Play Music</button>
+      <button id="letterBtn" class="btn ghost">💌 Open Letter</button>
+    </div>
+
+    <!-- Typewriter Letter -->
+    <section id="letterBox" class="letter hidden">
+      <h2>Dear Maria ❤️</h2>
+      <p id="typeText" class="typeText"></p>
+
+      <div class="proposal">
+        <p class="q">Maria, will you be my Valentine? 💍</p>
+
+        <div class="yn">
+          <button id="yesBtn" class="btn yes">Yes 💖</button>
+          <button id="noBtn" class="btn no">No 🙈</button>
+        </div>
+
+        <div id="answer" class="answer"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Music file -->
+  <audio id="bgm" preload="auto" loop>
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
